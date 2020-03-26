@@ -14,8 +14,8 @@
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <shubham yadav>
+ * @date <26/03/2020>
  *
  */
 
@@ -26,18 +26,24 @@
 
 /* Size of the Data Set */
 #define SIZE (40)
+void print_statistics(int min,int max,int mean,int median){
+}
+void print_array(int elm){
+}
+void find_min(int min){
+}
+void find_max(int max){
+}
+void find_median(int median){
+}
+void find_mean(int mean){
+}
+void sort_array(int elm,int num){
+}
 
 void main() {
 
-  unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
-                              114, 88,   45,  76, 123,  87,  25,  23,
-                              200, 122, 150, 90,   92,  87, 177, 244,
-                              201,   6,  12,  60,   8,   2,   5,  67,
-                                7,  87, 250, 230,  99,   3, 100,  90};
-
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
-
+ 
 }
 
 /* Add other Implementation File Code Here */
