@@ -9,76 +9,76 @@
  *
  *****************************************************************************/
 /**
- * @file <stats.h> 
- * @brief <file for assignment 1>
+ * @file stats.h 
+ * @brief Header file
  *
- * @author <Shubham Yadav>
- * @date <27th march 2020>
+ * @author shubham yadav
+ * @date 27/03/2020
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-void print_statistics(int min,int max,float mean,float median)
-
-/* @brief function to print the calculated statistics
+void print_statistics(int median,int min,int max,int mean);
+/* @brief <Print Statistics>
+ *
+ * This function takes max value, min value, mean and median and prints it
+ *
  * 
- * this function takes in mininimum maximum mean and median of the inputted array
+ * @return void
+ */
+void print_array(unsigned char *array, int n);
+
+/**
+ * @brief <Print a given array>
+ *
+ * This function takes an array and its length as input and prints the values.
  *
  * @return void
  */
-
-void print_array(int arr[],int n)
-
-/* @brief function to print the given array
- * 
- * this function takes in the given array and number of elements and prints it
+int find_median(unsigned char *array, int n);
+/**
+ * @brief <Find median>
  *
- * @return void
+ * This function takes an array and its length as input and returns its median. 
+ *
+ * @return median
+ */
+int find_mean(unsigned char *array, int n);
+
+/**
+ * @brief <Find mean>
+ *
+ * This function takes an array and its length as input and returns its mean. 
+ *
+ * @return mean
+ */
+int find_maximum(unsigned char *array, int n);
+
+/**
+ * @brief <Find the maximum>
+ *
+ * This function takes an array and its length as input and the maximum value. 
+ *
+ * @return maximum value
+ */
+int find_minimum(unsigned char *array, int n);
+
+/**
+ * @brief <Find the minimum>
+ *
+ * This function takes an array and its length as input and returns the minimum value. 
+ *
+ * @return minimum value
+ */
+unsigned char sort_array(unsigned char *array, int n);
+
+/**
+ * @brief <Sorts a given array from the max value to the min value>
+ *
+ * This function takes an array and its length as input and sorts it from largest to smallest.
+ *
+ * @return pointer to the sorted array
  */
 
-int find_min(int arr[],int n)
-
-/* @brief function to find the minimum
- * 
- * this function takes in the given array and number of elements and traverses through the array to find the minimum amoung the elements 
- *
- * @return integer min
- */
-
-int find_max(int arr[],int n)
-
-/* @brief function to find the maximum
- * 
- * this function takes in the given array and number of elements and traverses through the array to find the miximum amoung the elements 
- *
- * @return integer max
- */
-
-float find_median(int arr[],int n)
-
-/* @brief function to find the median
- * 
- * this function takes in the SORTED array and number of elements and finds the middle element by diving the number of elements by 2
- *
- * @return float median
- */
-
-float find_mean(int arr[],int n)
-
-/* @brief function to find the mean
- * 
- * this function takes in the given array and number of elements and first finds the sum of all the elements and then divides by the total number of terms to get the mean
- *
- * @return float mean
- */
-
-void sort_array(int arr[],int n)
-
-/* @brief function to sort the given array
- * 
- * this function takes in the given array and number of elements and sorts the given array from largest to smallest by getting the largest numbers to the initial positions
- *
- * @return void
- */
 #endif /* __STATS_H__ */
